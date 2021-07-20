@@ -2,6 +2,7 @@ pipeline {
 	agent none  
 	stages {
 		stage('BUILD') {
+			agent { label 'master' }
 			steps {
 				sh '''
 					pwd
